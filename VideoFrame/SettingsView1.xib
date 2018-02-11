@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MYRIADPRO-BOLD.OTF">
+            <string>MyriadPro-Bold</string>
+        </array>
+        <array key="MYRIADPRO-REGULAR.OTF">
+            <string>MyriadPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SettingsView1">
+            <rect key="frame" x="0.0" y="0.0" width="290" height="290"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T69-u1-tON">
+                    <rect key="frame" x="0.0" y="5" width="290" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="X4Y-6u-ufb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="20"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photos:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJq-UD-MR4">
+                    <rect key="frame" x="5" y="30" width="53" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="53" id="8CJ-Xi-iC5"/>
+                        <constraint firstAttribute="height" constant="25" id="BOZ-CE-Bfv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JY0-UM-D1w">
+                    <rect key="frame" x="65" y="30" width="75" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="6ww-o0-y17"/>
+                        <constraint firstAttribute="width" constant="75" id="DcQ-9D-knU"/>
+                    </constraints>
+                    <state key="normal" title="10.0s"/>
+                    <connections>
+                        <action selector="onPhotoDuration:" destination="iN0-l3-epB" eventType="touchUpInside" id="4Hi-0z-BbW"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xoc-dy-Uxq">
+                    <rect key="frame" x="160" y="30" width="36" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="FKq-TS-O6T"/>
+                        <constraint firstAttribute="width" constant="36" id="lcD-d6-Ov4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UM0-n8-ycK">
+                    <rect key="frame" x="210" y="30" width="75" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="ifu-t2-hNa"/>
+                        <constraint firstAttribute="width" constant="75" id="rVX-hU-xUO"/>
+                    </constraints>
+                    <state key="normal" title="6.0s"/>
+                    <connections>
+                        <action selector="onTextDuration:" destination="iN0-l3-epB" eventType="touchUpInside" id="Aww-Vk-HZR"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Action In:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U7b-xH-pdi">
+                    <rect key="frame" x="5" y="58" width="60" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="6dH-Cb-1RG"/>
+                        <constraint firstAttribute="width" constant="60" id="7cI-2y-pai"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCR-iO-p3v">
+                    <rect key="frame" x="65" y="58" width="75" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="75" id="4up-Je-LGJ"/>
+                        <constraint firstAttribute="height" constant="25" id="Ar0-b9-WdU"/>
+                    </constraints>
+                    <state key="normal" title="Fade"/>
+                    <connections>
+                        <action selector="onStartAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="1Za-pF-mfw"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Out:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z94-9T-mhA">
+                    <rect key="frame" x="160" y="58" width="36" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="2rB-By-mVI"/>
+                        <constraint firstAttribute="height" constant="25" id="G45-PH-N88"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cxw-1L-4PT">
+                    <rect key="frame" x="210" y="58" width="75" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="75" id="SSs-mf-Nqc"/>
+                        <constraint firstAttribute="height" constant="25" id="WBW-tJ-umb"/>
+                    </constraints>
+                    <state key="normal" title="ZoomCC"/>
+                    <connections>
+                        <action selector="onEndAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="dGb-1k-W4Q"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timeline:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2y7-q5-Xs9">
+                    <rect key="frame" x="5" y="86" width="55" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="3K1-8x-WaR"/>
+                        <constraint firstAttribute="width" constant="55" id="abe-yv-RDJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sro-2H-TMG">
+                    <rect key="frame" x="65" y="86" width="75" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="75" id="IQc-1x-aju"/>
+                        <constraint firstAttribute="height" constant="25" id="bfh-SX-6tA"/>
+                    </constraints>
+                    <connections>
+                        <action selector="onTimeline:" destination="iN0-l3-epB" eventType="touchUpInside" id="89z-Iw-39G"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Output:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMJ-c6-v5v">
+                    <rect key="frame" x="160" y="86" width="50" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="JMX-lq-l7w"/>
+                        <constraint firstAttribute="height" constant="25" id="m3j-1E-fG5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afb-Ka-qVz">
+                    <rect key="frame" x="210" y="86" width="75" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="75" id="FlJ-Jx-b8s"/>
+                        <constraint firstAttribute="height" constant="25" id="mgD-a3-gVQ"/>
+                    </constraints>
+                    <connections>
+                        <action selector="onOutputQuality:" destination="iN0-l3-epB" eventType="touchUpInside" id="G9c-5R-7GL"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preview:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6De-bk-KyC">
+                    <rect key="frame" x="5" y="114" width="55" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="55" id="2GN-Di-bvN"/>
+                        <constraint firstAttribute="height" constant="25" id="w5d-tX-seH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTd-2c-ANa">
+                    <rect key="frame" x="65" y="114" width="75" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="AYZ-6R-419"/>
+                        <constraint firstAttribute="width" constant="75" id="xxC-R1-pPC"/>
+                    </constraints>
+                    <state key="normal" title="10.0s"/>
+                    <connections>
+                        <action selector="onPreviewLength:" destination="iN0-l3-epB" eventType="touchUpInside" id="UAx-h4-2Py"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Outline:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HfH-CK-u71">
+                    <rect key="frame" x="160" y="114" width="50" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="qYn-PA-HGN"/>
+                        <constraint firstAttribute="height" constant="25" id="rwp-aO-xv8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYF-Xw-xSh">
+                    <rect key="frame" x="210" y="114" width="75" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="GJv-rV-YG6"/>
+                        <constraint firstAttribute="width" constant="75" id="ecs-az-5ov"/>
+                    </constraints>
+                    <connections>
+                        <action selector="onOutline:" destination="iN0-l3-epB" eventType="touchUpInside" id="WDk-q1-oa6"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App start with:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmZ-fR-cil">
+                    <rect key="frame" x="5" y="142" width="90" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="C0y-nd-EVF"/>
+                        <constraint firstAttribute="width" constant="90" id="Wem-Op-x2w"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0C0-z3-sQh">
+                    <rect key="frame" x="105" y="142" width="120" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="GvJ-TT-cEe"/>
+                        <constraint firstAttribute="width" constant="120" id="nwu-dK-qPW"/>
+                    </constraints>
+                    <connections>
+                        <action selector="onStartWith:" destination="iN0-l3-epB" eventType="touchUpInside" id="xwL-iB-Vsx"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ken Burns:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cq6-zm-v1T">
+                    <rect key="frame" x="5" y="170" width="70" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="KoK-0a-C4P"/>
+                        <constraint firstAttribute="width" constant="70" id="wik-Ch-dR1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oxZ-Cr-kNJ">
+                    <rect key="frame" x="78" y="167" width="51" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="49" id="C7L-9w-jdB"/>
+                        <constraint firstAttribute="height" constant="31" id="OBn-7w-h60"/>
+                    </constraints>
+                    <connections>
+                        <action selector="actionKenBurnsOnOff:" destination="iN0-l3-epB" eventType="valueChanged" id="hcS-k7-nWb"/>
+                    </connections>
+                </switch>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86C-nu-tWH">
+                    <rect key="frame" x="146" y="170" width="71" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="Qse-Ft-ScV"/>
+                        <constraint firstAttribute="width" constant="71" id="dJs-iv-qGA"/>
+                    </constraints>
+                    <state key="normal" title="Zoom Out"/>
+                    <connections>
+                        <action selector="actionKenBurnsZoom:" destination="iN0-l3-epB" eventType="touchUpInside" id="xar-th-Acf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3e-xW-K9Q">
+                    <rect key="frame" x="231" y="170" width="46" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="4Qt-3m-t73"/>
+                        <constraint firstAttribute="height" constant="25" id="ZKD-EF-qxP"/>
+                    </constraints>
+                    <state key="normal" title="2.2"/>
+                    <connections>
+                        <action selector="actionKenBurnsScale:" destination="iN0-l3-epB" eventType="touchUpInside" id="zEN-K4-zFb"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWa-DH-KFI">
+                    <rect key="frame" x="5" y="202" width="53" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="Xza-fM-cTx"/>
+                        <constraint firstAttribute="width" constant="53" id="YQa-RY-1Kh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbB-c6-Ixq">
+                    <rect key="frame" x="80" y="202" width="80" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="dUP-ja-xMJ"/>
+                        <constraint firstAttribute="height" constant="25" id="fok-jc-cHV"/>
+                    </constraints>
+                    <state key="normal" title="Backup"/>
+                    <connections>
+                        <action selector="backupDataToICloud:" destination="iN0-l3-epB" eventType="touchUpInside" id="S5U-ur-2cq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIM-p8-hUk">
+                    <rect key="frame" x="182" y="202" width="80" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="fYY-gX-xBh"/>
+                        <constraint firstAttribute="height" constant="25" id="kmk-17-U64"/>
+                    </constraints>
+                    <state key="normal" title="Restore"/>
+                    <connections>
+                        <action selector="restoreDataFromICloud:" destination="iN0-l3-epB" eventType="touchUpInside" id="VWe-Vy-6pS"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Projects:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRt-75-vMg">
+                    <rect key="frame" x="5" y="230" width="53" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="e9g-tt-Fse"/>
+                        <constraint firstAttribute="width" constant="53" id="r1H-Fq-Qqq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njx-9l-X0n">
+                    <rect key="frame" x="80" y="230" width="80" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="1zB-jP-Pp5"/>
+                        <constraint firstAttribute="height" constant="25" id="E2X-Iw-Ula"/>
+                    </constraints>
+                    <state key="normal" title="Backup"/>
+                    <connections>
+                        <action selector="actionBackupProject:" destination="iN0-l3-epB" eventType="touchUpInside" id="CVn-bu-6IZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RY8-3d-kDJ">
+                    <rect key="frame" x="182" y="230" width="80" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="8oi-uz-bFj"/>
+                        <constraint firstAttribute="width" constant="80" id="x6Y-3f-MrV"/>
+                    </constraints>
+                    <state key="normal" title="Restore"/>
+                    <connections>
+                        <action selector="actionRestoreProject:" destination="iN0-l3-epB" eventType="touchUpInside" id="vZw-Gd-jEa"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delete from iCloud:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRZ-wj-aSv">
+                    <rect key="frame" x="5" y="258" width="114" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="114" id="SrF-xr-Ctl"/>
+                        <constraint firstAttribute="height" constant="25" id="Wqm-qA-hyB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUa-FY-VTY">
+                    <rect key="frame" x="139" y="258" width="86" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="86" id="jWO-st-wY8"/>
+                        <constraint firstAttribute="height" constant="25" id="rUd-WV-pl1"/>
+                    </constraints>
+                    <state key="normal" title="Learn How"/>
+                    <connections>
+                        <action selector="actionLearnHow:" destination="iN0-l3-epB" eventType="touchUpInside" id="8kV-wN-hCZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Cq6-zm-v1T" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="0wu-q3-rXT"/>
+                <constraint firstItem="sro-2H-TMG" firstAttribute="leading" secondItem="2y7-q5-Xs9" secondAttribute="trailing" constant="5" id="0xm-ag-fMU"/>
+                <constraint firstItem="oxZ-Cr-kNJ" firstAttribute="leading" secondItem="Cq6-zm-v1T" secondAttribute="trailing" constant="3" id="2k3-yP-5tW"/>
+                <constraint firstItem="86C-nu-tWH" firstAttribute="leading" secondItem="Cq6-zm-v1T" secondAttribute="trailing" constant="71" id="3Ay-Ax-YSO"/>
+                <constraint firstItem="0C0-z3-sQh" firstAttribute="leading" secondItem="rmZ-fR-cil" secondAttribute="trailing" constant="10" id="4ZQ-YB-eFE"/>
+                <constraint firstItem="6De-bk-KyC" firstAttribute="top" secondItem="2y7-q5-Xs9" secondAttribute="bottom" constant="3" id="5PG-s9-02H"/>
+                <constraint firstItem="rmZ-fR-cil" firstAttribute="top" secondItem="0C0-z3-sQh" secondAttribute="top" id="7WT-5h-ZEf"/>
+                <constraint firstItem="rmZ-fR-cil" firstAttribute="top" secondItem="gTd-2c-ANa" secondAttribute="bottom" constant="3" id="9Rm-fy-Edt"/>
+                <constraint firstItem="U7b-xH-pdi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="Dtf-Iu-JMb"/>
+                <constraint firstItem="A3e-xW-K9Q" firstAttribute="leading" secondItem="86C-nu-tWH" secondAttribute="trailing" constant="14" id="EiO-8H-SnD"/>
+                <constraint firstItem="YUa-FY-VTY" firstAttribute="leading" secondItem="DRZ-wj-aSv" secondAttribute="trailing" constant="20" id="Ew5-Fc-Bd1"/>
+                <constraint firstItem="UM0-n8-ycK" firstAttribute="top" secondItem="T69-u1-tON" secondAttribute="bottom" constant="5" id="GFk-dg-flX"/>
+                <constraint firstItem="gTd-2c-ANa" firstAttribute="leading" secondItem="6De-bk-KyC" secondAttribute="trailing" constant="5" id="Hut-Sf-S9G"/>
+                <constraint firstItem="ZCR-iO-p3v" firstAttribute="top" secondItem="JY0-UM-D1w" secondAttribute="bottom" constant="3" id="INf-3i-bUN"/>
+                <constraint firstItem="njx-9l-X0n" firstAttribute="top" secondItem="GbB-c6-Ixq" secondAttribute="bottom" constant="3" id="Icn-MS-Plc"/>
+                <constraint firstItem="DRZ-wj-aSv" firstAttribute="top" secondItem="njx-9l-X0n" secondAttribute="bottom" constant="3" id="IdO-4f-IE2"/>
+                <constraint firstItem="KRt-75-vMg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="IdY-Ed-Kn8"/>
+                <constraint firstItem="GbB-c6-Ixq" firstAttribute="leading" secondItem="MWa-DH-KFI" secondAttribute="trailing" constant="22" id="Ije-fS-4iZ"/>
+                <constraint firstItem="oxZ-Cr-kNJ" firstAttribute="leading" secondItem="Cq6-zm-v1T" secondAttribute="trailing" constant="3" id="K3j-Th-DWT"/>
+                <constraint firstItem="HfH-CK-u71" firstAttribute="leading" secondItem="gTd-2c-ANa" secondAttribute="trailing" constant="20" id="KGT-g1-NfF"/>
+                <constraint firstItem="NJq-UD-MR4" firstAttribute="top" secondItem="T69-u1-tON" secondAttribute="bottom" constant="5" id="L0f-dP-bFZ"/>
+                <constraint firstItem="MWa-DH-KFI" firstAttribute="top" secondItem="GbB-c6-Ixq" secondAttribute="top" id="M5a-5f-cvU"/>
+                <constraint firstItem="NIM-p8-hUk" firstAttribute="leading" secondItem="GbB-c6-Ixq" secondAttribute="trailing" constant="22" id="MB3-jb-Ijj"/>
+                <constraint firstItem="2y7-q5-Xs9" firstAttribute="top" secondItem="U7b-xH-pdi" secondAttribute="bottom" constant="3" id="NH3-cs-HXv"/>
+                <constraint firstItem="oxZ-Cr-kNJ" firstAttribute="top" secondItem="Cq6-zm-v1T" secondAttribute="top" id="OCt-nz-Tmx"/>
+                <constraint firstItem="86C-nu-tWH" firstAttribute="top" secondItem="Cq6-zm-v1T" secondAttribute="top" id="OG5-Yo-DOl"/>
+                <constraint firstItem="afb-Ka-qVz" firstAttribute="top" secondItem="Cxw-1L-4PT" secondAttribute="bottom" constant="3" id="OW1-gF-KqH"/>
+                <constraint firstItem="T69-u1-tON" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="Omy-Pe-gbh"/>
+                <constraint firstItem="sro-2H-TMG" firstAttribute="top" secondItem="ZCR-iO-p3v" secondAttribute="bottom" constant="3" id="OsS-gv-cgC"/>
+                <constraint firstItem="Z94-9T-mhA" firstAttribute="top" secondItem="xoc-dy-Uxq" secondAttribute="bottom" constant="3" id="PNk-b7-yI7"/>
+                <constraint firstItem="RY8-3d-kDJ" firstAttribute="top" secondItem="NIM-p8-hUk" secondAttribute="bottom" constant="3" id="PQ8-Y1-jk9"/>
+                <constraint firstItem="JY0-UM-D1w" firstAttribute="leading" secondItem="NJq-UD-MR4" secondAttribute="trailing" constant="7" id="RDl-HI-GoZ"/>
+                <constraint firstItem="T69-u1-tON" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Rut-Wk-fyp"/>
+                <constraint firstItem="6De-bk-KyC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="TX9-Xm-p7w"/>
+                <constraint firstItem="0C0-z3-sQh" firstAttribute="leading" secondItem="rmZ-fR-cil" secondAttribute="trailing" constant="10" id="TZf-fI-W6n"/>
+                <constraint firstAttribute="trailing" secondItem="Cq6-zm-v1T" secondAttribute="trailing" id="VfI-fK-eDb"/>
+                <constraint firstItem="BYF-Xw-xSh" firstAttribute="leading" secondItem="HfH-CK-u71" secondAttribute="trailing" id="WAS-TQ-qNt"/>
+                <constraint firstItem="KRt-75-vMg" firstAttribute="top" secondItem="MWa-DH-KFI" secondAttribute="bottom" constant="3" id="X54-u5-UgE"/>
+                <constraint firstItem="Z94-9T-mhA" firstAttribute="leading" secondItem="ZCR-iO-p3v" secondAttribute="trailing" constant="20" id="XkL-uN-gcr"/>
+                <constraint firstItem="MWa-DH-KFI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="Ynm-1y-O5l"/>
+                <constraint firstItem="xMJ-c6-v5v" firstAttribute="top" secondItem="Z94-9T-mhA" secondAttribute="bottom" constant="3" id="ZJa-Yp-awd"/>
+                <constraint firstItem="Cxw-1L-4PT" firstAttribute="leading" secondItem="Z94-9T-mhA" secondAttribute="trailing" constant="14" id="a5E-qw-Be9"/>
+                <constraint firstItem="rmZ-fR-cil" firstAttribute="bottom" secondItem="0C0-z3-sQh" secondAttribute="bottom" id="b1W-4f-VQE"/>
+                <constraint firstItem="ZCR-iO-p3v" firstAttribute="leading" secondItem="U7b-xH-pdi" secondAttribute="trailing" id="b9q-aF-ng9"/>
+                <constraint firstItem="xMJ-c6-v5v" firstAttribute="leading" secondItem="sro-2H-TMG" secondAttribute="trailing" constant="20" id="d6T-ak-2iX"/>
+                <constraint firstItem="JY0-UM-D1w" firstAttribute="top" secondItem="T69-u1-tON" secondAttribute="bottom" constant="5" id="eKR-RM-BTb"/>
+                <constraint firstItem="afb-Ka-qVz" firstAttribute="leading" secondItem="xMJ-c6-v5v" secondAttribute="trailing" id="evM-iF-mV8"/>
+                <constraint firstItem="U7b-xH-pdi" firstAttribute="top" secondItem="NJq-UD-MR4" secondAttribute="bottom" constant="3" id="f6R-EJ-dok"/>
+                <constraint firstItem="MWa-DH-KFI" firstAttribute="top" secondItem="NIM-p8-hUk" secondAttribute="top" id="j7c-GK-rlP"/>
+                <constraint firstItem="A3e-xW-K9Q" firstAttribute="top" secondItem="Cq6-zm-v1T" secondAttribute="top" id="jGC-jA-yYL"/>
+                <constraint firstItem="gTd-2c-ANa" firstAttribute="top" secondItem="sro-2H-TMG" secondAttribute="bottom" constant="3" id="kb8-IZ-xAh"/>
+                <constraint firstItem="BYF-Xw-xSh" firstAttribute="top" secondItem="afb-Ka-qVz" secondAttribute="bottom" constant="3" id="n6S-UW-ugp"/>
+                <constraint firstAttribute="trailing" secondItem="T69-u1-tON" secondAttribute="trailing" id="now-9u-l3g"/>
+                <constraint firstItem="rmZ-fR-cil" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="oEV-mc-WvL"/>
+                <constraint firstItem="UM0-n8-ycK" firstAttribute="leading" secondItem="xoc-dy-Uxq" secondAttribute="trailing" constant="14" id="pUn-H5-Ybj"/>
+                <constraint firstItem="xoc-dy-Uxq" firstAttribute="top" secondItem="T69-u1-tON" secondAttribute="bottom" constant="5" id="pqs-Cj-izn"/>
+                <constraint firstItem="njx-9l-X0n" firstAttribute="leading" secondItem="KRt-75-vMg" secondAttribute="trailing" constant="22" id="qJK-8T-9f5"/>
+                <constraint firstItem="NJq-UD-MR4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="qPQ-WO-dJU"/>
+                <constraint firstItem="MWa-DH-KFI" firstAttribute="top" secondItem="Cq6-zm-v1T" secondAttribute="bottom" constant="7" id="qaf-IX-NCj"/>
+                <constraint firstItem="0C0-z3-sQh" firstAttribute="top" secondItem="BYF-Xw-xSh" secondAttribute="bottom" constant="3" id="qoi-qd-g2R"/>
+                <constraint firstItem="HfH-CK-u71" firstAttribute="top" secondItem="xMJ-c6-v5v" secondAttribute="bottom" constant="3" id="rZt-50-b7A"/>
+                <constraint firstItem="86C-nu-tWH" firstAttribute="leading" secondItem="oxZ-Cr-kNJ" secondAttribute="trailing" constant="19" id="rbD-B8-4Pp"/>
+                <constraint firstItem="2y7-q5-Xs9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="sZz-lV-3Gj"/>
+                <constraint firstItem="xoc-dy-Uxq" firstAttribute="leading" secondItem="JY0-UM-D1w" secondAttribute="trailing" constant="20" id="tZO-nj-Yhx"/>
+                <constraint firstItem="RY8-3d-kDJ" firstAttribute="leading" secondItem="njx-9l-X0n" secondAttribute="trailing" constant="22" id="vUE-5R-GnY"/>
+                <constraint firstItem="YUa-FY-VTY" firstAttribute="top" secondItem="RY8-3d-kDJ" secondAttribute="bottom" constant="3" id="vv6-FX-OG6"/>
+                <constraint firstItem="Cq6-zm-v1T" firstAttribute="top" secondItem="0C0-z3-sQh" secondAttribute="bottom" constant="3" id="wMV-M6-AbE"/>
+                <constraint firstItem="Cxw-1L-4PT" firstAttribute="top" secondItem="UM0-n8-ycK" secondAttribute="bottom" constant="3" id="wey-5d-dQ3"/>
+                <constraint firstItem="DRZ-wj-aSv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="xY9-J8-Snu"/>
+                <constraint firstItem="A3e-xW-K9Q" firstAttribute="leading" secondItem="Cq6-zm-v1T" secondAttribute="trailing" constant="156" id="yQD-j6-9VC"/>
+                <constraint firstItem="oxZ-Cr-kNJ" firstAttribute="centerY" secondItem="Cq6-zm-v1T" secondAttribute="centerY" id="zKf-qc-cYV"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="7WT-5h-ZEf"/>
+                    <exclude reference="b1W-4f-VQE"/>
+                    <exclude reference="VfI-fK-eDb"/>
+                    <exclude reference="4ZQ-YB-eFE"/>
+                    <exclude reference="2k3-yP-5tW"/>
+                    <exclude reference="OCt-nz-Tmx"/>
+                    <exclude reference="3Ay-Ax-YSO"/>
+                    <exclude reference="yQD-j6-9VC"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="backupBtn" destination="GbB-c6-Ixq" id="rnI-8W-Guw"/>
+                <outlet property="endActionBtn" destination="Cxw-1L-4PT" id="Fjm-UW-JWp"/>
+                <outlet property="kbScaleBtn" destination="A3e-xW-K9Q" id="iHT-0i-dtx"/>
+                <outlet property="kbSwitch" destination="oxZ-Cr-kNJ" id="UnU-Qb-INl"/>
+                <outlet property="kbZoomBtn" destination="86C-nu-tWH" id="xPz-pa-7wx"/>
+                <outlet property="learnBtn" destination="YUa-FY-VTY" id="afe-NP-w76"/>
+                <outlet property="outlineBtn" destination="BYF-Xw-xSh" id="N8b-09-YUP"/>
+                <outlet property="outputQualityBtn" destination="afb-Ka-qVz" id="uxg-Pf-Syy"/>
+                <outlet property="photoDurationBtn" destination="JY0-UM-D1w" id="CQD-yH-T0Z"/>
+                <outlet property="previewLengthBtn" destination="gTd-2c-ANa" id="7cR-Vx-SvC"/>
+                <outlet property="projectBackupBtn" destination="njx-9l-X0n" id="0xf-6i-3oK"/>
+                <outlet property="projectRestoreBtn" destination="RY8-3d-kDJ" id="sQJ-2B-ywL"/>
+                <outlet property="restoreBtn" destination="NIM-p8-hUk" id="wVV-4T-4xW"/>
+                <outlet property="startActionBtn" destination="ZCR-iO-p3v" id="dxY-RM-Ez5"/>
+                <outlet property="startWithBtn" destination="0C0-z3-sQh" id="JaE-yW-Bqq"/>
+                <outlet property="textDurationBtn" destination="UM0-n8-ycK" id="0Nj-gV-UeY"/>
+                <outlet property="timelineBtn" destination="sro-2H-TMG" id="Tu0-0n-ZS1"/>
+            </connections>
+            <point key="canvasLocation" x="-100" y="-28"/>
+        </view>
+    </objects>
+</document>

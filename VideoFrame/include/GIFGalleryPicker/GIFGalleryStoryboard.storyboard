@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="MYRIADPRO-BOLD.OTF">
+            <string>MyriadPro-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Gallery Picker Controller-->
+        <scene sceneID="pqU-hh-2WL">
+            <objects>
+                <navigationController storyboardIdentifier="GIFGalleryPickerController" id="XlU-Yl-ROH" customClass="GIFGalleryPickerController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kFA-9V-gAF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="TL6-96-rkl" kind="relationship" relationship="rootViewController" id="jmL-hs-goe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="csk-XQ-1Z0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-102" y="338"/>
+        </scene>
+        <!--Gallery Grid View Controller-->
+        <scene sceneID="1DO-QJ-EBB">
+            <objects>
+                <collectionViewController id="TL6-96-rkl" customClass="GIFGalleryGridViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="7tL-ub-r9I">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="xa5-sJ-pGd">
+                            <size key="itemSize" width="80" height="80"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="Ugt-80-ozT" customClass="GIFGalleryGridViewCell">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gvb-Xz-yyo">
+                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkImage" translatesAutoresizingMaskIntoConstraints="NO" id="Tj2-5N-MHo">
+                                            <rect key="frame" x="58" y="58" width="20" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="20" id="Dyb-4w-QKj"/>
+                                                <constraint firstAttribute="height" constant="20" id="odv-D6-juS"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="gvb-Xz-yyo" firstAttribute="leading" secondItem="Ugt-80-ozT" secondAttribute="leading" id="0Sp-Vw-5RD"/>
+                                    <constraint firstAttribute="trailing" secondItem="Tj2-5N-MHo" secondAttribute="trailing" constant="2" id="0Vo-rO-lLr"/>
+                                    <constraint firstItem="gvb-Xz-yyo" firstAttribute="top" secondItem="Ugt-80-ozT" secondAttribute="top" id="1Fk-Kt-e5p"/>
+                                    <constraint firstAttribute="bottom" secondItem="gvb-Xz-yyo" secondAttribute="bottom" id="TYw-0w-a9V"/>
+                                    <constraint firstAttribute="bottom" secondItem="Tj2-5N-MHo" secondAttribute="bottom" constant="2" id="X4c-6O-n60"/>
+                                    <constraint firstAttribute="trailing" secondItem="gvb-Xz-yyo" secondAttribute="trailing" id="kcu-eN-f8I"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="gvb-Xz-yyo" id="6Mv-6A-Dmd"/>
+                                    <outlet property="selectedImageView" destination="Tj2-5N-MHo" id="j66-6e-jgi"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="TL6-96-rkl" id="9AC-Je-RJd"/>
+                            <outlet property="delegate" destination="TL6-96-rkl" id="6xT-S3-vpD"/>
+                        </connections>
+                    </collectionView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="WBy-8K-uu2">
+                        <nil key="title"/>
+                        <view key="titleView" contentMode="scaleToFill" id="p1R-fG-mke">
+                            <rect key="frame" x="96" y="6" width="128" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GIFs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBL-OU-O6h">
+                                    <rect key="frame" x="0.0" y="0.0" width="128" height="33"/>
+                                    <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="17"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BIl-Bo-qaU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="315" y="338"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checkImage" width="220" height="220"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

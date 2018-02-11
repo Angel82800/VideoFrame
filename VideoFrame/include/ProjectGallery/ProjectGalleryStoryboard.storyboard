@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MYRIADPRO-REGULAR.OTF">
+            <string>MyriadPro-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Project Gallery Picker Controller-->
+        <scene sceneID="O7c-Iy-7Mh">
+            <objects>
+                <navigationController storyboardIdentifier="ProjectGalleryPickerController" id="qib-N0-jBr" customClass="ProjectGalleryPickerController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bvm-oZ-LL3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="SGv-oL-nve" kind="relationship" relationship="rootViewController" id="m0S-iv-c26"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bFP-21-IGC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1745" y="-845"/>
+        </scene>
+        <!--Projects-->
+        <scene sceneID="yPj-ig-GiE">
+            <objects>
+                <viewController id="SGv-oL-nve" customClass="ProjectListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="amV-PY-h8s"/>
+                        <viewControllerLayoutGuide type="bottom" id="2qE-IO-E0T"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gDE-GV-mRT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="64" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="YUh-eF-RL7">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProjectCell" id="J8p-Dw-DsE" customClass="ProjectCell">
+                                        <rect key="frame" x="0.0" y="22" width="600" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J8p-Dw-DsE" id="KdU-Zb-xwL">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0MU-Fh-NSd">
+                                                    <rect key="frame" x="10" y="0.0" width="100" height="63"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="63" id="6tJ-Rt-N54"/>
+                                                        <constraint firstAttribute="width" constant="100" id="AFn-9l-czD"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="project name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ra-74-2ci">
+                                                    <rect key="frame" x="120" y="0.0" width="437" height="63"/>
+                                                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="15"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dark_check_off" translatesAutoresizingMaskIntoConstraints="NO" id="FT0-Jf-Ohb">
+                                                    <rect key="frame" x="562" y="17" width="29" height="29"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="29" id="4eo-A5-VI3"/>
+                                                        <constraint firstAttribute="height" constant="29" id="J31-YT-aAJ"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="FT0-Jf-Ohb" firstAttribute="top" secondItem="KdU-Zb-xwL" secondAttribute="top" constant="17" id="N2b-es-zrO"/>
+                                                <constraint firstItem="6Ra-74-2ci" firstAttribute="leading" secondItem="0MU-Fh-NSd" secondAttribute="trailing" constant="10" id="O2V-OZ-naq"/>
+                                                <constraint firstItem="0MU-Fh-NSd" firstAttribute="top" secondItem="KdU-Zb-xwL" secondAttribute="top" id="Paa-bA-6Nc"/>
+                                                <constraint firstAttribute="bottom" secondItem="6Ra-74-2ci" secondAttribute="bottom" id="Rh9-BQ-xGC"/>
+                                                <constraint firstItem="6Ra-74-2ci" firstAttribute="top" secondItem="KdU-Zb-xwL" secondAttribute="top" id="bYF-Vi-DTD"/>
+                                                <constraint firstItem="FT0-Jf-Ohb" firstAttribute="leading" secondItem="6Ra-74-2ci" secondAttribute="trailing" constant="5" id="ftX-u8-emV"/>
+                                                <constraint firstItem="0MU-Fh-NSd" firstAttribute="leading" secondItem="KdU-Zb-xwL" secondAttribute="leading" constant="10" id="kq4-Z3-80J"/>
+                                                <constraint firstAttribute="trailing" secondItem="FT0-Jf-Ohb" secondAttribute="trailing" constant="9" id="x4K-u5-XIA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="projectNameLabel" destination="6Ra-74-2ci" id="TCM-53-tZD"/>
+                                            <outlet property="projectThumbImageView" destination="0MU-Fh-NSd" id="HdE-S9-EFv"/>
+                                            <outlet property="selectImageView" destination="FT0-Jf-Ohb" id="gxI-qQ-pVn"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="SGv-oL-nve" id="bYZ-IH-opv"/>
+                                    <outlet property="delegate" destination="SGv-oL-nve" id="h8l-u3-bbk"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="YUh-eF-RL7" secondAttribute="trailing" id="BcC-EL-XA2"/>
+                            <constraint firstItem="YUh-eF-RL7" firstAttribute="top" secondItem="gDE-GV-mRT" secondAttribute="top" id="Eh0-zl-An5"/>
+                            <constraint firstItem="YUh-eF-RL7" firstAttribute="leading" secondItem="gDE-GV-mRT" secondAttribute="leading" id="YTv-1v-Mpu"/>
+                            <constraint firstItem="2qE-IO-E0T" firstAttribute="top" secondItem="YUh-eF-RL7" secondAttribute="bottom" id="gJe-g1-494"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Projects" id="rgU-yO-2Zc">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="ONf-jN-aLm">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="actionCancel:" destination="SGv-oL-nve" id="izv-T1-Wyi"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Backup" id="JOu-8Y-Tbs">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="actionBackupRestore:" destination="SGv-oL-nve" id="HZy-Oy-H8p"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="backupRestoreButton" destination="JOu-8Y-Tbs" id="Nuf-F5-vp2"/>
+                        <outlet property="cancelButton" destination="ONf-jN-aLm" id="2KF-nN-9ax"/>
+                        <outlet property="projectListTableView" destination="YUh-eF-RL7" id="H9w-gg-1Gf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Ag-2H-ElZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1011" y="-848"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dark_check_off" width="22" height="22"/>
+    </resources>
+</document>

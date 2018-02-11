@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6246"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="MYRIADPRO-BOLD.OTF">
+            <string>MyriadPro-Bold</string>
+            <string>MyriadPro-Bold</string>
+            <string>MyriadPro-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="YJLVideoThumbMaker">
+            <rect key="frame" x="0.0" y="0.0" width="700" height="500"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press play and select a frame to use as your thumbnail" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4AQ-gN-ae0">
+                    <rect key="frame" x="100" y="10" width="500" height="30"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="p5z-6z-OgH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pdu-9g-5OC">
+                    <rect key="frame" x="10" y="47" width="680" height="400"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="400" id="mjG-DS-jcV"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dob-ah-y6e">
+                    <rect key="frame" x="150" y="452" width="140" height="40"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="HHA-nN-twP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="17"/>
+                    <state key="normal" title="Use this frame">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionUseThisFrame:" destination="iN0-l3-epB" eventType="touchUpInside" id="LAG-AG-6u0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AiE-3e-iKq">
+                    <rect key="frame" x="410" y="452" width="140" height="40"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="Ert-XY-b1m"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="17"/>
+                    <state key="normal" title="Cancel">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionCancel:" destination="iN0-l3-epB" eventType="touchUpInside" id="2mg-JY-HsY"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="4AQ-gN-ae0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="21e-ur-nuk"/>
+                <constraint firstAttribute="trailing" secondItem="AiE-3e-iKq" secondAttribute="trailing" constant="150" id="4NV-6f-Sjb"/>
+                <constraint firstItem="Dob-ah-y6e" firstAttribute="top" secondItem="pdu-9g-5OC" secondAttribute="bottom" constant="5" id="OhI-eg-Vlf"/>
+                <constraint firstAttribute="bottom" secondItem="Dob-ah-y6e" secondAttribute="bottom" constant="8" id="Snn-L9-GdF"/>
+                <constraint firstAttribute="bottom" secondItem="AiE-3e-iKq" secondAttribute="bottom" constant="8" id="ZLt-1m-bZw"/>
+                <constraint firstItem="4AQ-gN-ae0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="100" id="eOf-sg-YzC"/>
+                <constraint firstItem="Dob-ah-y6e" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="150" id="ep0-4u-5MN"/>
+                <constraint firstAttribute="trailing" secondItem="pdu-9g-5OC" secondAttribute="trailing" constant="10" id="jWS-b0-BFi"/>
+                <constraint firstItem="pdu-9g-5OC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="k5N-Pk-phG"/>
+                <constraint firstItem="AiE-3e-iKq" firstAttribute="top" secondItem="pdu-9g-5OC" secondAttribute="bottom" constant="5" id="o10-FG-Zw0"/>
+                <constraint firstItem="pdu-9g-5OC" firstAttribute="top" secondItem="4AQ-gN-ae0" secondAttribute="bottom" constant="7" id="w8n-U7-gVv"/>
+                <constraint firstAttribute="trailing" secondItem="4AQ-gN-ae0" secondAttribute="trailing" constant="100" id="x0F-mQ-87d"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancelBtn" destination="AiE-3e-iKq" id="iRN-Ef-uGH"/>
+                <outlet property="myTitleLabel" destination="4AQ-gN-ae0" id="Yl5-ar-LYj"/>
+                <outlet property="useThisFrameBtn" destination="Dob-ah-y6e" id="OBr-k2-kiu"/>
+                <outlet property="videoPlayerView" destination="pdu-9g-5OC" id="eF2-b2-bDI"/>
+            </connections>
+            <point key="canvasLocation" x="9" y="64"/>
+        </view>
+    </objects>
+</document>

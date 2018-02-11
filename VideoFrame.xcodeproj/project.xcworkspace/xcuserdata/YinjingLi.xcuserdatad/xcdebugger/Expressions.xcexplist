@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[MakeVideoVC onPhotoFromGallery]:MakeVideoVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[PHPhotoLibrary authorizationStatus]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MakeVideoVC makeVideoFromGIF:]:MakeVideoVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "gifImage.size">
+            </PersistentString>
+            <PersistentString
+               value = "gifImage.duration">
+            </PersistentString>
+            <PersistentString
+               value = "gifImage.images.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MediaObjectView initWithVideoUrl:size:startPositions:endPositions:motionArray:]:MediaObjectView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.originalVideoSize">
+            </PersistentString>
+            <PersistentString
+               value = "self.mediaUrl">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SAVideoRangeSlider deleteVideoRangeSlider:]:SAVideoRangeSlider.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.videoRangeSliderArray.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SelectTemplateVC getProjects]:SelectTemplateVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.projectNamesArray">
+            </PersistentString>
+            <PersistentString
+               value = "self.projectThumbViewArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__31-[VideoEditor nextNormalFilter]_block_invoke:VideoEditor.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.exporter">
+            </PersistentString>
+            <PersistentString
+               value = "[self.exporter error]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AAPLAssetGridViewController collectionView:cellForItemAtIndexPath:]:AAPLAssetGridViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "asset.localIdentifier">
+            </PersistentString>
+            <PersistentString
+               value = "self.myCache">
+            </PersistentString>
+            <PersistentString
+               value = "asset.mediaSubtypes">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MakeVideoVC updateAllChromakeyExportingTimer:]:MakeVideoVC.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[MediaObjectView initWithGIF:size:]:MediaObjectView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.originalVideoSize">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[TimelineView skipToStart]:TimelineView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "slider.leftPosition">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MakeVideoVC mediaObjectSelected:]:MakeVideoVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "selectedObject.currentPosition">
+            </PersistentString>
+            <PersistentString
+               value = "prevSelectedObject.currentPosition">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MakeVideoVC dealloc]:MakeVideoVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.mediaObjectArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SpeedSegmentView actionAddSlowSegment:]:SpeedSegmentView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.myMediaRangeSlider.videoRangeSliderArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[JogEditView actionJogSlowReverse:]:JogEditView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.motionValueOfJog">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SelectTemplateVC openProject]:SelectTemplateVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "currentProjectName">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[JogEditView getOutputVideoDuration]:JogEditView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.jogStartTime">
+            </PersistentString>
+            <PersistentString
+               value = "self.originalVideoDuration">
+            </PersistentString>
+            <PersistentString
+               value = "self.jogStopTime">
+            </PersistentString>
+            <PersistentString
+               value = "self.motionValueOfJog">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[VideoEditor procNormalFilterFromSomeObjects]:VideoEditor.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "object.videoMotion">
+            </PersistentString>
+            <PersistentString
+               value = "object.mfStartPosition">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MediaTrimView playbackTrimMovie:]:MediaTrimView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.stopTime">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MakeVideoVC updateTotalTime]:MakeVideoVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.timelineView.totalTime">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[OutlineView actionRecentColor:]:OutlineView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.objectBorderColor">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SelectTemplateVC myMovieFinishedCallback:]:SelectTemplateVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.infoVideoPlayer.playbackState">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[VideoEditor procNormalFilterFromAllObjects]:VideoEditor.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.objectArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SpeedSegmentView initWithFrame:type:url:]:SpeedSegmentView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.titleLabel">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MakeVideoVC decodeProject]:MakeVideoVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "object.videoView">
+            </PersistentString>
+            <PersistentString
+               value = "object.mfEndPosition">
+            </PersistentString>
+            <PersistentString
+               value = "object.mfStartPosition">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__45-[MediaTrimView initWithFrame:url:type:flag:]_block_invoke:MediaTrimView.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[FiltersView setSelectedFilters:]:FiltersView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.filterIndexArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MakeVideoVC didSelectedMotion:motions:starts:ends:]:MakeVideoVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "selectedObject.startPositionArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[VideoEditor setInputObjectArray:]:VideoEditor.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "object.mfStartAnimationDuration">
+            </PersistentString>
+            <PersistentString
+               value = "object.mfEndAnimationDuration">
+            </PersistentString>
+            <PersistentString
+               value = "object.mfStartPosition">
+            </PersistentString>
+            <PersistentString
+               value = "object.mediaType">
+            </PersistentString>
+            <PersistentString
+               value = "self.objectArray">
+            </PersistentString>
+            <PersistentString
+               value = "object.mfEndPosition">
+            </PersistentString>
+            <PersistentString
+               value = "object.renderedImage">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SAVideoRangeSlider requestDetectEdge:]:SAVideoRangeSlider.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.nSelectedSliderIndex">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MediaObjectView selected:]:MediaObjectView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.kbFocusImageView">
+            </PersistentString>
+            <PersistentString
+               value = "self.kbFocusPoint">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__41-[VideoFiltersView previewTwoInputFilter]_block_invoke_2:VideoFiltersView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "asset.duration">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MediaTrimView applyTrim:]:MediaTrimView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "reversedVideoTrack.nominalFrameRate">
+            </PersistentString>
+            <PersistentString
+               value = "self.exportSession.timeRange">
+            </PersistentString>
+            <PersistentString
+               value = "self.exportSession.status">
+            </PersistentString>
+            <PersistentString
+               value = "MainInstruction.timeRange">
+            </PersistentString>
+            <PersistentString
+               value = "sliderView.motionValue">
+            </PersistentString>
+            <PersistentString
+               value = "MainCompositionInst.frameDuration">
+            </PersistentString>
+            <PersistentString
+               value = "mixComposition.duration">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MakeVideoVC viewDidLoad]:MakeVideoVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.workspaceView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[JogEditView mixJogVideos]:JogEditView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.jogStartTime">
+            </PersistentString>
+            <PersistentString
+               value = "self.reversedMediaAsset.duration">
+            </PersistentString>
+            <PersistentString
+               value = "mixComposition.duration">
+            </PersistentString>
+            <PersistentString
+               value = "self.tmpMediaUrl">
+            </PersistentString>
+            <PersistentString
+               value = "self.jogStopTime">
+            </PersistentString>
+            <PersistentString
+               value = "MainInstruction.timeRange">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[VideoEditor movieRecordingCompleted]:VideoEditor.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[FDWaveformView layoutSubviews]:FDWaveformView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.image.image.size">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MediaObjectView initWithGIF:frame:size:]:MediaObjectView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.videoView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[OutlineView saveCurrentColorToRecent]:OutlineView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.recentColorArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[VideoFiltersView applySelectedFilter]:VideoFiltersView.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[AAPLAssetGridViewController removeActivityIndicatorFromNavigationBar]:AAPLAssetGridViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.customAssetPickerController.isSingleOnly">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SelectTemplateVC carousel:viewForItemAtIndex:reusingView:]:SelectTemplateVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.projectThumbViewArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MediaObjectView getNormalFilterVideoCropRect]:MediaObjectView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.originalVideoSize">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MediaObjectView renderingImageView]:MediaObjectView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.imageView.image">
+            </PersistentString>
+            <PersistentString
+               value = "self.videoView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MakeVideoVC didApplyJogReverse:url:]:MakeVideoVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "selectedObject.startPositionArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[VideoFiltersView previewSelectedFilter]:VideoFiltersView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.filter">
+            </PersistentString>
+            <PersistentString
+               value = "self.movieFile">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SettingsView setStartEndAction:]:SettingsView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.actionSettingsPicker">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MakeVideoVC viewWillAppear:]:MakeVideoVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.timelineView">
+            </PersistentString>
+            <PersistentString
+               value = "self.timelineBtn">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[JogEditView hudWillDisappear:]:JogEditView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[self.exportSession status]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MakeVideoVC updateAllVideoExportingTimer:]:MakeVideoVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "session.progress">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MediaTrimView stopRecording]:MediaTrimView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_assetWriter.status">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__27-[JogEditView mixJogVideos]_block_invoke_2:JogEditView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[self.exportSession error]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MediaObjectView renderingKenBurnsImage]:MediaObjectView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.superViewSize">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[VideoEditor createChromakeyVideo]:VideoEditor.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.objectArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AAPLAssetGridViewController collectionView:layout:sizeForItemAtIndexPath:]:AAPLAssetGridViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.collectionView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[GPUImageMovie readNextVideoFrameFromOutput:]:GPUImageMovie.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "synchronizedMovieWriter">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__70-[GIFGalleryGridViewController collectionView:cellForItemAtIndexPath:]_block_invoke:GIFGalleryGridViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "thumbGIf.size">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[JogEditView createJogVideo]:JogEditView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "mixComposition.duration">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SelectTemplateVC moviePlayerPlaybackStateDidChange:]:SelectTemplateVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.infoVideoPlayer.playbackState">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SelectTemplateVC viewWillAppear:]:SelectTemplateVC.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[JogEditView finishRecording]:JogEditView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_assetWriter.status">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[JogEditView playbackMotionMovie:]:JogEditView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.mediaPlayerLayer">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SASliderView trimIntervalStr]:SASliderView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.superview">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SettingsView saveData]:SettingsView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[mydoc fileURL]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SelectTemplateVC deleteProject:]:SelectTemplateVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.projectNamesArray">
+            </PersistentString>
+            <PersistentString
+               value = "self.projectThumbViewArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[FiltersView applyFilters]:FiltersView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.filterIndexArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__69-[AAPLAssetGridViewController collectionView:cellForItemAtIndexPath:]_block_invoke:AAPLAssetGridViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[VideoEditor initFilter:]:VideoEditor.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "object.objectChromaColor">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SAVideoRangeSlider isAvailableAddNewSegment]:SAVideoRangeSlider.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.durationSeconds">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[VideoEditor nomalFilterProc]:VideoEditor.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.objectArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[JogEditView createReverseVideo]:JogEditView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.mediaAsset">
+            </PersistentString>
+            <PersistentString
+               value = "self.jogStartTime">
+            </PersistentString>
+            <PersistentString
+               value = "self.motionValueOfJog">
+            </PersistentString>
+            <PersistentString
+               value = "self.jogStopTime">
+            </PersistentString>
+            <PersistentString
+               value = "mixComposition.naturalSize">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[VideoFiltersView retrievingProgress]:VideoFiltersView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.movieFile.progress">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MediaObjectView changeVideoThumbWithFilter]:MediaObjectView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.mediaFilterUrl">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[GIFGalleryGridViewController collectionView:cellForItemAtIndexPath:]:GIFGalleryGridViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[VideoEditor setVideoTrackTimeRange:object:track:]:VideoEditor.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "object.mfEndPosition">
+            </PersistentString>
+            <PersistentString
+               value = "object.endPosition">
+            </PersistentString>
+            <PersistentString
+               value = "object.mfStartPosition">
+            </PersistentString>
+            <PersistentString
+               value = "inputAsset.duration">
+            </PersistentString>
+            <PersistentString
+               value = "object.startPosition">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MakeVideoVC outputVideoProcessing]:MakeVideoVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.mediaObjectArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__27-[MediaTrimView applyTrim:]_block_invoke_2:MediaTrimView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.exportSession.status">
+            </PersistentString>
+            <PersistentString
+               value = "self.exportSession.error">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MakeVideoVC moveToEnd]:MakeVideoVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "elf.timelineView.contentSize">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MediaTrimView assetByReversingAsset:transform:]:MediaTrimView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "reader.status">
+            </PersistentString>
+            <PersistentString
+               value = "self.assetWriter.status">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[YJLVideoThumbMaker actionUseThisFrame:]:YJLVideoThumbMaker.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "videoPlayer.currentPlaybackTime">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[VideoEditor procNormalFilterFromFirstPhoto]:VideoEditor.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.pathToMovie">
+            </PersistentString>
+            <PersistentString
+               value = "self.currentProcessingIdx">
+            </PersistentString>
+            <PersistentString
+               value = "self.mixComposition">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ActionSettingsPickerView initWithTitle:]:ActionSettingsPickerView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.myPickerView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[VideoEditor setVideoAnimation:mediaObject:asset:]:VideoEditor.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "object.mfEndAnimationDuration">
+            </PersistentString>
+            <PersistentString
+               value = "object.mfEndPosition">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[JogEditView initWithFrame:url:index:]:JogEditView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.motionValueOfJog">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AAPLAssetGridViewController didSelectedAssets]:AAPLAssetGridViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.title">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[GPUImageMovie endProcessing]:GPUImageMovie.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.playerItem">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[JogEditView completedProcessReverse]:JogEditView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.tmpMediaUrl">
+            </PersistentString>
+            <PersistentString
+               value = "timesArray">
+            </PersistentString>
+            <PersistentString
+               value = "percentageDone">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[VideoEditor makeVideoFromGIF:]:VideoEditor.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "gifImage.duration">
+            </PersistentString>
+            <PersistentString
+               value = "gifImage.images.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[VideoFiltersView removeAllTargets]:VideoFiltersView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.observer">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MediaTrimView hudWillDisappear:]:MediaTrimView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.assetWriter.status">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MakeVideoVC didApplyVideoFilter:index:value:]:MakeVideoVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "selectedObject.videoFilterIndex">
+            </PersistentString>
+            <PersistentString
+               value = "selectedObject.mediaFilterUrl">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SelectTemplateVC willRotateToInterfaceOrientation:duration:]:SelectTemplateVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.view">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[TimelineView initTimelinePosition:startPosition:endPosition:]:TimelineView.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[VideoEditor initOverlayLayer:]:VideoEditor.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "object.mediaType">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MediaTrimView initWithFrame:url:type:flag:]:MediaTrimView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.mediaAsset.duration">
+            </PersistentString>
+            <PersistentString
+               value = "self.stopTime">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AAPLAssetGridViewController viewDidLoad]:AAPLAssetGridViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[UINavigationBar class]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MakeVideoVC didApplyVideoFilter:index:]:MakeVideoVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.videoPlayer">
+            </PersistentString>
+            <PersistentString
+               value = "selectedObject.mediaFilterUrl">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[VideoEditor videoToGreenVideo]:VideoEditor.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.currentProcessingIdx">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SpeedSegmentView videoRange:didChangeLeftPosition:rightPosition:LCR:value:]:SpeedSegmentView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.myMediaRangeSlider.nSelectedSliderIndex">
+            </PersistentString>
+            <PersistentString
+               value = "self.myMediaRangeSlider.videoRangeSliderArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

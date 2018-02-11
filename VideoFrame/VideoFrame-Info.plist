@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>Video Dreamer</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>GIF image</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSHandlerRank</key>
+			<string>Alternate</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.compuserve.gif</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleExecutable</key>
+	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>${PRODUCT_NAME}</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>2.0</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>2.0329</string>
+	<key>Fabric</key>
+	<dict>
+		<key>APIKey</key>
+		<string>efd58941c82758d04d9365bbcf7f99b798f1c20c</string>
+		<key>Kits</key>
+		<array>
+			<dict>
+				<key>KitInfo</key>
+				<dict/>
+				<key>KitName</key>
+				<string>Crashlytics</string>
+			</dict>
+			<dict>
+				<key>KitInfo</key>
+				<dict>
+					<key>apikey</key>
+					<string>7a0bdd21aeaa4dc8af42e1a709b023be</string>
+				</dict>
+				<key>KitName</key>
+				<string>Appsee</string>
+			</dict>
+		</array>
+	</dict>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>Used to Media Library</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Used to scan barcodes</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Used to micro phone</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Used to Photo Library</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Dakota Regular.ttf</string>
+		<string>AGOpus Bold.ttf</string>
+		<string>Coopbln.ttf</string>
+		<string>Franchise_Bold.ttf</string>
+		<string>MAFT.ttf</string>
+		<string>Stencil.ttf</string>
+		<string>Typewriter-Medium.otf</string>
+		<string>MYRIADPRO-BOLD.OTF</string>
+		<string>MYRIADPRO-BOLDIT.OTF</string>
+		<string>MYRIADPRO-REGULAR.OTF</string>
+		<string>MYRIADPRO-SEMIBOLD.OTF</string>
+		<string>MYRIADPRO-SEMIBOLDIT.OTF</string>
+		<string>bloofs.ttf</string>
+		<string>anirb.ttf</string>
+		<string>anirm.ttf</string>
+		<string>Casper.ttf</string>
+		<string>CreatorCreditsBB_ital.otf</string>
+		<string>CreatorCreditsBB_ital.ttf</string>
+		<string>CreatorCreditsBB.otf</string>
+		<string>CreatorCreditsBB.ttf</string>
+		<string>Crom_v1.ttf</string>
+		<string>csnpwdt NFI.otf</string>
+		<string>Deanna.ttf</string>
+		<string>elvish ring nfi.otf</string>
+		<string>elvish ring nfi.ttf</string>
+		<string>Friday13.otf</string>
+		<string>Friday13.ttf</string>
+		<string>Friday13SH.otf</string>
+		<string>Friday13SH.ttf</string>
+		<string>HellraiserBloody.otf</string>
+		<string>HOMOARAK.TTF</string>
+		<string>Mobsters.ttf</string>
+		<string>njnaruto.ttf</string>
+		<string>ParryHotter.ttf</string>
+		<string>PARSELTO.TTF</string>
+		<string>PORKYS.TTF</string>
+		<string>PORKH.TTF</string>
+		<string>RINGM.TTF</string>
+		<string>Scream Real.otf</string>
+		<string>Scream Real.ttf</string>
+		<string>Sematary.ttf</string>
+		<string>terminator real nfi.ttf</string>
+		<string>terminator real nfi.otf</string>
+		<string>TheGodfather-v2.ttf</string>
+		<string>Tr2n.ttf</string>
+		<string>underworld.ttf</string>
+		<string>WillyWonka.ttf</string>
+		<string>zreaks nfi.ttf</string>
+		<string>zreaks nfi.otf</string>
+		<string>ACFilmstrip.otf</string>
+		<string>ANGEL.ttf</string>
+		<string>BubbleMan.ttf</string>
+		<string>CANDY.ttf</string>
+		<string>DoubleFeature20.ttf</string>
+		<string>Grinched.ttf</string>
+		<string>Hellbound.otf</string>
+		<string>Hellraiser 3.otf</string>
+		<string>Hellraiser3 Shadow.otf</string>
+		<string>Highguard  New.ttf</string>
+		<string>KR Action!.ttf</string>
+		<string>KR Movie Time.ttf</string>
+		<string>KR Popcorn Time!.ttf</string>
+		<string>MetalMacabre.ttf</string>
+		<string>Movie Filmstrip.ttf</string>
+		<string>PublicEnemyNF.otf</string>
+		<string>PublicEnemyNF.ttf</string>
+		<string>SaucerBB.ttf</string>
+		<string>Shutdown!.ttf</string>
+		<string>sucker_font_2013_Juan_Casco.ttf</string>
+		<string>Tonight.ttf</string>
+		<string>TrashCinemaBB_ital.ttf</string>
+		<string>TrashCinemaBB.ttf</string>
+		<string>waltograph42.otf</string>
+		<string>waltograph42.ttf</string>
+		<string>waltographUI.ttf</string>
+		<string>WARGAMES.TTF</string>
+	</array>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UIRequiresFullScreen</key>
+	<true/>
+	<key>UIStatusBarHidden</key>
+	<true/>
+	<key>UIStatusBarHidden~ipad</key>
+	<true/>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<true/>
+	<key>kTCCServiceMediaLibrary</key>
+	<string>Used to music</string>
+</dict>
+</plist>
